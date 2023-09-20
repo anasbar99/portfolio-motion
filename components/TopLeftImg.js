@@ -1,5 +1,11 @@
-const TopLeftImg = () => {
-  return <div>Top Left Image</div>;
-};
+import Image from "next/image"
 
-export default TopLeftImg;
+const TopLeftImg = () => {
+  return (
+    <div className="absolute top-0 left-0 z-10 mix-blend-color-dodge w-[200px] xl:w-[400] opacity-50">
+      <Image src="/top-left-img.png" width={400} height={400} alt="" />
+    </div>
+  )
+}
+
+export default TopLeftImg
